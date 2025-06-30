@@ -1,7 +1,7 @@
 import useGlobalReducer from "../hooks/useGlobalReducer";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-const StarZone = () => {
+const StarShipsZone = () => {
   const { store, dispatch } = useGlobalReducer();
   const like = (name) => {
     dispatch({ type: "Like", payload: name });
@@ -80,4 +80,4 @@ const StarZone = () => {
   );
 };
 
-export default StarZone;
+export default StarShipsZone;

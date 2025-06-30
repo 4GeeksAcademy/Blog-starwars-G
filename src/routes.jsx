@@ -11,15 +11,13 @@ import { Single } from "./pages/Single";
 import { Demo } from "./pages/Demo";
 import CharactersZone from "./pages/CharactersZone";
 import PlanetsZone from "./pages/PlanetsZone";
-import StarZone from "./pages/StarZone";
+import StarShipsZone from "./pages/StarShipsZone";
 import VehiclesZone from "./pages/VehiclesZone";
 import SpeciesZone from "./pages/SpeciesZone";
-import MoviesZone from "./pages/MoviesZone";
-// import MoviesDetail from "./pages/MoviesDetail";
+import FilmZone from "./pages/FilmZone";
 import PlanetsDetails from "./pages/PlanetsDetails";
 import Character from "./pages/Character";
-
-import StarDetail from "./pages/StarDetails";
+import StarshipsDetail from "./pages/ StarshipsDetail";
 import VehiclesDetails from "./pages/VehiclesDetails";
 import SpeciesDetails from "./pages/SpeciesDetails";
 import MoviesDetail from "./pages/MoviesDetails";
@@ -36,13 +34,13 @@ export const router = createBrowserRouter(
       <Route path="/Character/:id" element={<Character />} />
       <Route path="/planets" element={<PlanetsZone />} />
       <Route path="/planets/:id" element={<PlanetsDetails />} />
-      <Route path="/star" element={<StarZone />} />
-      <Route path="/star/:id" element={<StarDetail />} />
+      <Route path="/StarShipsZone" element={<StarShipsZone />} />
+      <Route path="/StarshipsDetail/:id" element={<StarshipsDetail />} />
       <Route path="/vehicles" element={<VehiclesZone />} />
       <Route path="/vehicles/:id" element={<VehiclesDetails />} />
       <Route path="/species" element={<SpeciesZone />} />
       <Route path="/species/:id" element={<SpeciesDetails />} />
-      <Route path="/movies" element={<MoviesZone />} />
+      <Route path="/FilmZone" element={<FilmZone />} />
       <Route path="/movies/:id" element={<MoviesDetail />} />
     </Route>
   )

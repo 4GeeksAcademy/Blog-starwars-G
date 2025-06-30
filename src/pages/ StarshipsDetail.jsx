@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-const StarDetail = () => {
+const StarshipsDetail = () => {
   const { id } = useParams();
   const [starShip, setStarShip] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -83,4 +83,4 @@ const StarDetail = () => {
   );
 };
 
-export default StarDetail;
+export default StarshipsDetail;
